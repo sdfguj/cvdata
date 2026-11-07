@@ -1,10 +1,11 @@
-{
+export default {
+
     en: {
         name: "Akmalkhon Ibragimov",
         // techStack: "Technical Stack: Python, GLSL/HLSL, Unreal Engine 5, Touch Designer, P5.js, AWS",
         objective: "A full stack developer, looking for interesting projects and collaboration.",
         btnText: "Get in Touch",
-        inputPlaceholder: "Hi Morty...i love reading about your daily adventures",
+        inputPlaceholder: "please tell me how to get in touch with you...",
         sendBtn: "Send Message",
         printText: "Print",
         titles: {
