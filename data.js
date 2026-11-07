@@ -1,0 +1,465 @@
+const cvData = {
+
+    en: {
+        name: "Akmalkhon Ibragimov",
+        // techStack: "Technical Stack: Python, GLSL/HLSL, Unreal Engine 5, Touch Designer, P5.js, AWS",
+        objective: "A full stack developer, looking for interesting projects and collaboration.",
+        btnText: "Get in Touch",
+        inputPlaceholder: "please tell me how to get in touch with you...",
+        sendBtn: "Send Message",
+        printText: "Print",
+        titles: {
+            skills: "Technical Skills",
+            experience: "Professional Experience & Education",
+            education: "Education & Academic Background"
+        },
+        skills: [{
+            category: "Visualization",
+            items: ["Touch Designer", "Unreal Engine 5", "P5.js", "Real-Time Data Mapping"]
+        }, {
+            category: "Coding",
+            items: ["Python (Data processing)", "GLSL/HLSL (Shaders)", "JavaScript"]
+        }, {
+            category: "Infrastructure",
+            items: ["AWS Cloud Management", "CI/CD", "System Admin", "Linux"]
+        }, {
+            category: "Design",
+            items: ["Motion Design", "3D Modeling", "Procedural Animation"]
+        }],
+        experience: [{
+            title: "<a href='https://www.jlai.cn/' target='_blank'>Jilin Animation Institute</a>",
+            subtitle: "B.A. in Animation Art (Interactive Systems & Procedural Animation)",
+            date: "2022 - 2026",
+            details: [
+                "Location: Changchun / Beijing, China",
+                "Specializing in interactive installations, real-time visual systems, and procedural animation.",
+                "Fusing 15+ years of international, technical, and logistical experience into Python, GLSL/HLSL shaders, TouchDesigner, and P5.js."
+            ]
+        }, {
+            title: "Speechtopia Beijing Tech Ltd.",
+            subtitle: "Systems & Infrastructure Admin",
+            date: "2019 - 2020",
+            details: [
+                "Location: Beijing, China",
+                "Managed AWS cloud infrastructure and assisted in system administration for a tech-focused startup.",
+                "Handled CI/CD code review and approval, ensuring stable deployment pipelines."
+            ]
+        }, {
+            title: "<a href='https://www.bfa.edu.cn/' target='_blank'>Beijing Film Academy</a>",
+            subtitle: "Film Production Studies",
+            date: "2018",
+            details: [
+                "Location: Beijing, China",
+                "Focused on visual narrative structure, pacing, and cinematography."
+            ]
+        }, {
+            title: "<a href='https://2020tesol.com' target='_blank'>2020tesol.com</a>",
+            subtitle: "Web Platform Developer",
+            date: "2015 - 2018",
+            details: [
+                "Location: Beijing, China",
+                "Developed a web platform for educators, managing the full application architecture from database backends to user interface development."
+            ]
+        }, {
+            title: "<a href='https://www.oxbridge.com.br/' target='_blank'>Oxbridge English</a>",
+            subtitle: "Business English Instructor & Corporate Trainer",
+            date: "2015",
+            details: [
+                "Location: Jundiaí, São Paulo, Brazil",
+                "Instructed Business English and spoken English proficiency over phone practice and on-premise sessions.",
+                "Developed tailored corporate curricula directly inside companies recently acquired by U.S. parent corporations."
+            ]
+        }, {
+            title: "Sunway Vanlines",
+            subtitle: "Interstate Logistics Subcontractor & Operations Manager",
+            date: "2013 - 2015",
+            details: [
+                "Location: Continental United States (Registered in Florida)",
+                "Managed end-to-end logistics operations across the continental U.S., securing cargo pickups, managing escorts, drop-offs, and client relations."
+            ]
+        }, {
+            title: "<a href='https://www.wyndhamhotels.com/best-western' target='_blank'>Best Western Plus (Passaic County)</a>",
+            subtitle: "Housekeeping & Maintenance Supervisor",
+            date: "2011 - 2013",
+            details: [
+                "Location: Passaic County, New Jersey, USA",
+                "Led a 12-person staff inspecting rooms for quality compliance.",
+                "Directed emergency recovery operations following historic regional floods, rebuilding and restoring critical IT systems and physical security surveillance infrastructure."
+            ]
+        }, {
+            title: "Fifth Avenue Fashion Pop-Ups",
+            subtitle: "Retail & Wholesale Operations",
+            date: "2010",
+            details: [
+                "Location: New York City, New York, USA",
+                "Managed operations for Fifth Avenue wholesale fashion label pop-up stores in Manhattan's fashion district."
+            ]
+        }, {
+            title: "<a href='https://bluegrass.kctcs.edu/' target='_blank'>Bluegrass Community College</a>",
+            subtitle: "Telecommunications Engineering Studies",
+            date: "2009",
+            details: [
+                "Location: Kentucky, USA",
+                "Pivoted from traditional policy to study telecommunications engineering, laying down network logic for future systems administration."
+            ]
+        }, {
+            title: "Freelance Web Developer",
+            subtitle: "Full-Stack Web Practice",
+            date: "2009 - 2015",
+            details: [
+                "Developed diverse web solutions and mastered frontend interaction."
+            ]
+        }, {
+            title: "Victoria Foreign Languages",
+            subtitle: "English Instructor",
+            date: "2007 - 2008",
+            details: [
+                "Location: Changchun, China",
+                "Delivered on-premise and mobile field teaching assignments across local kindergartens, colleges, middle schools, and private homes."
+            ]
+        }, {
+            title: "Zervana",
+            subtitle: "Principal Founding Team & CMS Lead",
+            date: "2006 - 2007",
+            details: [
+                "Location: Dushanbe, Tajikistan",
+                "Part of principal founding team at mobile content provider specializing in Value-Added Services (VAS).",
+                "Managed Content Management System (CMS), formatted ringback tones using Windows CLI and Adobe Audition."
+            ]
+        }, {
+            title: "<a href='https://www.rtsu.tj/' target='_blank'>Russian Tajik Slavonic University</a>",
+            subtitle: "International Relations",
+            date: "2004",
+            details: ["Began undergraduate studies in political science."]
+        }],
+        education: [{
+            title: "<a href='https://www.jlai.cn/' target='_blank'>Jilin Animation Institute</a>",
+            subtitle: "B.A. in Animation Art",
+            date: "2022 - 2026",
+            details: ["Specializing in interactive installations and real-time visual systems.", "Applying technical logic (Python/Shaders) to artistic output."]
+        }, {
+            title: "<a href='https://www.bfa.edu.cn/' target='_blank'>Beijing Film Academy</a>",
+            subtitle: "Film Production Studies",
+            date: "2018",
+            details: ["Focused on visual narrative structure and cinematography."]
+        }, {
+            title: "<a href='https://bluegrass.kctcs.edu/' target='_blank'>Bluegrass Community College</a>",
+            subtitle: "Telecommunications Engineering",
+            date: "2009",
+            details: []
+        }, {
+            title: "<a href='https://www.rtsu.tj/' target='_blank'>Russian Tajik Slavonic University</a>",
+            subtitle: "International Relations",
+            date: "2004",
+            details: ["Began undergraduate studies in political science."]
+        }]
+    },
+    ru: {
+        name: "Акмалхон Ибрагимов",
+        // techStack: "Технический стек: Python, GLSL/HLSL, Unreal Engine 5, Touch Designer, P5.js, AWS",
+        objective: "Full-stack разработчик, в поиске интересных проектов и сотрудничества.",
+        btnText: "Связаться",
+        inputPlaceholder: "Введите ваше сообщение здесь...",
+        sendBtn: "Отправить сообщение",
+        printText: "Печать",
+        titles: {
+            skills: "Технические навыки",
+            experience: "Профессиональный опыт и Образование",
+            education: "Образование и академический опыт"
+        },
+        skills: [{
+            category: "Визуализация",
+            items: ["Touch Designer", "Unreal Engine 5", "P5.js", "Маппинг данных"]
+        }, {
+            category: "Программирование",
+            items: ["Python (Обработка данных)", "GLSL/HLSL (Шейдеры)", "JavaScript"]
+        }, {
+            category: "Инфраструктура",
+            items: ["AWS (Управление облаком)", "CI/CD", "Системное администрирование", "Linux"]
+        }, {
+            category: "Дизайн",
+            items: ["Моушн-дизайн", "3D-моделирование", "Процедурная анимация"]
+        }],
+        experience: [{
+            title: "<a href='https://www.jlai.cn/' target='_blank'>Цзилиньский институт анимации</a>",
+            subtitle: "Бакалавр анимации (Интерактивные системы и процедурная анимация)",
+            date: "2022 - 2026",
+            details: [
+                "Местоположение: Чанчунь / Пекин, Китай",
+                "Специализация на интерактивных инсталляциях, визуальных системах реального времени и процедурной анимации.",
+                "Объединение 15+ лет технического опыта с Python, GLSL/HLSL шейдерами, TouchDesigner и P5.js."
+            ]
+        }, {
+            title: "Speechtopia Beijing Tech Ltd.",
+            subtitle: "Администратор систем и инфраструктуры",
+            date: "2019 - 2020",
+            details: [
+                "Местоположение: Пекин, Китай",
+                "Управлял облачной инфраструктурой AWS и помогал в системном администрировании технологического стартапа.",
+                "Отвечал за проверку и утверждение кода CI/CD, обеспечивая стабильность пайплайнов развертывания."
+            ]
+        }, {
+            title: "<a href='https://www.bfa.edu.cn/' target='_blank'>Пекинская киноакадемия</a>",
+            subtitle: "Изучение кинопроизводства",
+            date: "2018",
+            details: [
+                "Местоположение: Пекин, Китай",
+                "Фокус на визуальной структуре повествования, темпе и операторском искусстве."
+            ]
+        }, {
+            title: "<a href='https://2020tesol.com' target='_blank'>2020tesol.com</a>",
+            subtitle: "Разработчик веб-платформы",
+            date: "2015 - 2018",
+            details: [
+                "Местоположение: Пекин, Китай",
+                "Разработал веб-платформу для преподавателей, управляя полной архитектурой от бэкенда до пользовательского интерфейса."
+            ]
+        }, {
+            title: "<a href='https://www.oxbridge.com.br/' target='_blank'>Oxbridge English</a>",
+            subtitle: "Преподаватель делового английского и корпоративный тренер",
+            date: "2015",
+            details: [
+                "Местоположение: Жундиаи, Сан-Пауло, Бразилия",
+                "Проводил занятия по деловому и разговорному английскому языку по телефону и на местах.",
+                "Разрабатывал специализированные корпоративные учебные программы для компаний, приобретенных американскими корпорациями."
+            ]
+        }, {
+            title: "Sunway Vanlines",
+            subtitle: "Межрегиональный логистический субподрядчик",
+            date: "2013 - 2015",
+            details: [
+                "Местоположение: Континентальная часть США (зарегистрировано во Флориде)",
+                "Управлял логистикой по всей территории США, координируя забор грузов, сопровождение, доставку и работу с клиентами."
+            ]
+        }, {
+            title: "<a href='https://www.wyndhamhotels.com/best-western' target='_blank'>Best Western Plus (Округ Пассеик)</a>",
+            subtitle: "Супервайзер по клинингу и обслуживанию",
+            date: "2011 - 2013",
+            details: [
+                "Местоположение: Округ Пассеик, Нью-Джерси, США",
+                "Руководил штатом из 12 сотрудников, проверяя номера на соответствие стандартам.",
+                "Руководил аварийно-восстановительными работами после масштабных наводнений, восстанавливая ИТ-системы и инфраструктуру видеонаблюдения."
+            ]
+        }, {
+            title: "Поп-ап магазины на Пятой авеню",
+            subtitle: "Розничные и оптовые операции",
+            date: "2010",
+            details: [
+                "Местоположение: Нью-Йорк, США",
+                "Управлял операционной деятельностью оптовых модных поп-ап магазинов в центре Нью-Йорка."
+            ]
+        }, {
+            title: "<a href='https://bluegrass.kctcs.edu/' target='_blank'>Технический колледж Блуграсс</a>",
+            subtitle: "Изучение телекоммуникационной инженерии",
+            date: "2009",
+            details: [
+                "Местоположение: Кентукки, США",
+                "Перешел от традиционной политики к изучению телекоммуникаций, заложив сетевую логику для будущей системной администрации."
+            ]
+        }, {
+            title: "Фриланс веб-разработчик",
+            subtitle: "Full-Stack веб-практика",
+            date: "2009 - 2015",
+            details: [
+                "Разрабатывал разнообразные веб-решения и осваивал фронтенд-взаимодействие."
+            ]
+        }, {
+            title: "Victoria Foreign Languages",
+            subtitle: "Преподаватель английского языка",
+            date: "2007 - 2008",
+            details: [
+                "Местоположение: Чанчунь, Китай",
+                "Проводил стационарные и выездные занятия по английскому языку в детских садах, колледжах, школах и на дому."
+            ]
+        }, {
+            title: "Zervana",
+            subtitle: "Основная команда основателей и руководитель CMS",
+            date: "2006 - 2007",
+            details: [
+                "Местоположение: Душанбе, Таджикистан",
+                "Входил в команду основателей мобильного контент-провайдера (VAS).",
+                "Управлял системой управления контентом (CMS) и пакетной обработкой рингбэк-тонов с использованием Windows CLI и Adobe Audition."
+            ]
+        }, {
+            title: "<a href='https://www.rtsu.tj/' target='_blank'>Российско-Таджикский (Славянский) университет</a>",
+            subtitle: "Изучение дипломатии",
+            date: "2004",
+            details: ["Начало обучения по специальности «Дипломатия»."]
+        }],
+        education: [{
+            title: "<a href='https://www.jlai.cn/' target='_blank'>Цзилиньский институт анимации</a>",
+            subtitle: "Бакалавр анимационного искусства",
+            date: "2022 - 2026",
+            details: ["Специализация на интерактивных инсталляциях и визуальных системах реального времени.", "Применение технической логики (Python/Шейдеры) к художественному результату."]
+        }, {
+            title: "<a href='https://www.bfa.edu.cn/' target='_blank'>Пекинская киноакадемия</a>",
+            subtitle: "Изучение кинопроизводства",
+            date: "2018",
+            details: ["Фокус на визуальной структуре повествования и операторском искусстве."]
+        }, {
+            title: "<a href='https://bluegrass.kctcs.edu/' target='_blank'>Технический колледж Блуграсс</a>",
+            subtitle: "Телекоммуникационная инженерия",
+            date: "2009",
+            details: []
+        }, {
+            title: "<a href='https://www.rtsu.tj/' target='_blank'>Российско-Таджикский (Славянский) университет</a>",
+            subtitle: "Изучение дипломатии",
+            date: "2004",
+            details: ["Начало обучения по специальности «Дипломатия»."]
+        }]
+    },
+    zh: {
+        name: "阿克马尔洪·伊布拉吉莫夫",
+        // techStack: "技术栈: Python, GLSL/HLSL, Unreal Engine 5, Touch Designer, P5.js, AWS",
+        objective: "全栈开发人员，寻找有趣的项目与合作机会。",
+        btnText: "联系方式",
+        inputPlaceholder: "在此输入您的留言...",
+        sendBtn: "发送消息",
+        printText: "打印",
+        titles: {
+            skills: "专业技能",
+            experience: "工作经历与职业时间线",
+            education: "教育背景与学术经历"
+        },
+        skills: [{
+            category: "数据可视化",
+            items: ["Touch Designer", "Unreal Engine 5", "P5.js", "实时数据映射"]
+        }, {
+            category: "编程语言",
+            items: ["Python (数据处理)", "GLSL/HLSL (自定义着色器)", "JavaScript"]
+        }, {
+            category: "基础设施",
+            items: ["AWS 云管理", "CI/CD", "系统管理", "Linux"]
+        }, {
+            category: "设计能力",
+            items: ["动态设计 (Motion Design)", "3D 建模", "程序化动画"]
+        }],
+        experience: [{
+            title: "<a href='https://www.jlai.cn/' target='_blank'>吉林动画学院</a>",
+            subtitle: "动画艺术学士 (交互系统与程序化动画)",
+            date: "2022 - 2026",
+            details: [
+                "地点: 中国长春 / 北京",
+                "主修交互式装置、实时视觉系统与程序化动画。",
+                "将 15 年以上的国际、技术与物流经验融合应用于 Python、GLSL/HLSL 着色器、TouchDesigner 与 P5.js 中。"
+            ]
+        }, {
+            title: "Speechtopia Beijing Tech Ltd.",
+            subtitle: "系统与基础设施管理员",
+            date: "2019 - 2020",
+            details: [
+                "地点: 中国北京",
+                "管理 AWS 云基础设施，并为初创科技公司提供系统管理支持。",
+                "负责 CI/CD 代码审查与批准，确保部署流水线的稳定性。"
+            ]
+        }, {
+            title: "<a href='https://www.bfa.edu.cn/' target='_blank'>北京电影学院</a>",
+            subtitle: "电影制作进修",
+            date: "2018",
+            details: [
+                "地点: 中国北京",
+                "专注于视觉叙事结构、视听节奏与摄影术。"
+            ]
+        }, {
+            title: "<a href='https://2020tesol.com' target='_blank'>2020tesol.com</a>",
+            subtitle: "Web 平台开发人员",
+            date: "2015 - 2018",
+            details: [
+                "地点: 中国北京",
+                "为教育工作者开发 Web 平台，负责从数据库后端到用户界面的完整应用架构。"
+            ]
+        }, {
+            title: "<a href='https://www.oxbridge.com.br/' target='_blank'>Oxbridge English</a>",
+            subtitle: "商务英语讲师与企业培训师",
+            date: "2015",
+            details: [
+                "地点: 巴西圣保罗州茹恩迪亚伊",
+                "通过电话及现场授课进行商务英语与口语培训。",
+                "为被美国母公司收购的企业内部定制专属企业英语课程。"
+            ]
+        }, {
+            title: "Sunway Vanlines",
+            subtitle: "跨州物流 subcontractor 与运营负责人",
+            date: "2013 - 2015",
+            details: [
+                "地点: 美国本土 (总部注册于佛罗里达州)",
+                "管理美国本土全境物流运营，负责货物揽收、随行护送、卸货及客户关系管理。"
+            ]
+        }, {
+            title: "<a href='https://www.wyndhamhotels.com/best-western' target='_blank'>Best Western Plus (帕塞伊克县)</a>",
+            subtitle: "客房与维护主管",
+            date: "2011 - 2013",
+            details: [
+                "地点: 美国新泽西州帕塞伊克县",
+                "领导 12 人团队进行客房质量检查与合规监管。",
+                "在当地遭遇特大洪水灾害后，主导应急恢复工作，重建并恢复了酒店的关键 IT 系统与物理安防监控基础设施。"
+            ]
+        }, {
+            title: "第五大道快闪时尚零售",
+            subtitle: "零售与批发运营",
+            date: "2010",
+            details: [
+                "地点: 美国纽约",
+                "在纽约时尚中心管理第五大道批发时尚品牌快闪店的运营。"
+            ]
+        }, {
+            title: "<a href='https://bluegrass.kctcs.edu/' target='_blank'>蓝草社区技术学院</a>",
+            subtitle: "电信工程学习",
+            date: "2009",
+            details: [
+                "地点: 美国肯塔基州",
+                "从传统政策转向电信工程学习，为未来的系统管理奠定网络底层逻辑。"
+            ]
+        }, {
+            title: "自由 Web 开发人员",
+            subtitle: "全栈 Web 实践",
+            date: "2009 - 2015",
+            details: [
+                "开发多样化的 Web 解决方案，精通前端交互设计。"
+            ]
+        }, {
+            title: "Victoria Foreign Languages",
+            subtitle: "英语讲师",
+            date: "2007 - 2008",
+            details: [
+                "地点: 中国长春",
+                "在当地幼儿园、高校、中学及私人住宅提供驻场及外派英语教学。"
+            ]
+        }, {
+            title: "Zervana",
+            subtitle: "核心创始团队与 CMS 负责人",
+            date: "2006 - 2007",
+            details: [
+                "地点: 塔吉克斯坦杜尚别",
+                "作为移动增值业务 (VAS) 内容提供商的核心创始团队成员。",
+                "管理内容管理系统 (CMS)，使用 Windows CLI 和 Adobe Audition 格式化并批量处理回铃音音频资产。"
+            ]
+        }, {
+            title: "<a href='https://www.rtsu.tj/' target='_blank'>俄塔斯拉夫大学</a>",
+            subtitle: "外交学学习",
+            date: "2004",
+            details: ["开始攻读外交学本科专业。"]
+        }],
+        education: [{
+            title: "<a href='https://www.jlai.cn/' target='_blank'>吉林动画学院</a>",
+            subtitle: "动画艺术 学士",
+            date: "2022 - 2026",
+            details: ["主修交互式装置与实时视觉系统。", "将技术逻辑 (Python/Shaders) 应用于艺术创作。"]
+        }, {
+            title: "<a href='https://www.bfa.edu.cn/' target='_blank'>北京电影学院</a>",
+            subtitle: "电影制作进修",
+            date: "2018",
+            details: ["专注于视觉叙事结构与摄影术。"]
+        }, {
+            title: "<a href='https://bluegrass.kctcs.edu/' target='_blank'>蓝草社区技术学院</a>",
+            subtitle: "电信工程",
+            date: "2009",
+            details: []
+        }, {
+            title: "<a href='https://www.rtsu.tj/' target='_blank'>俄塔斯拉夫大学</a>",
+            subtitle: "外交学学习",
+            date: "2004",
+            details: ["开始攻读外交学本科专业。"]
+        }]
+    }
+};
